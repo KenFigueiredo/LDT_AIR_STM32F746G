@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EC01E83E-E90D-45AD-87AE-9C768DA41385}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>.;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\CMSIS_RTOS;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\Portable\gcc\ARM_CM3;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\system;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\ipv4;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\Legacy;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Device\ST\STM32F7xx\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\RTOS\Template;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\BSP\STM32746G-Discovery;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\arm-eabi\thumb\cortex_m7;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)server-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>.;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\arm-eabi\thumb\cortex_m7;c:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\CMSIS_RTOS;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\Portable\gcc\ARM_CM3;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\system;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\ipv4;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\Legacy;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Device\ST\STM32F7xx\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\RTOS\Template;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)server-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\croutine.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\event_groups.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\list.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\portable\GCC\ARM_CM3\port.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\portable\MemMang\heap_4.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\queue.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\tasks.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\timers.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\api\api_lib.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\api\api_msg.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\api\err.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\api\netbuf.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\api\netdb.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\api\netifapi.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\api\sockets.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\api\tcpip.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\def.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\dhcp.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\dns.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\init.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\ipv4\autoip.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\ipv4\icmp.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\ipv4\igmp.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\ipv4\inet.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\ipv4\inet_chksum.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\ipv4\ip.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\ipv4\ip_addr.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\ipv4\ip_frag.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\lwip_timers.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\mem.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\memp.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\netif.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\pbuf.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\raw.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\snmp\asn1_dec.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\snmp\asn1_enc.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\snmp\mib2.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\snmp\mib_structs.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\snmp\msg_in.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\snmp\msg_out.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\stats.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\sys.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\tcp.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\tcp_in.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\tcp_out.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\core\udp.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\etharp.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\auth.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\chap.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\chpms.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\fsm.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\ipcp.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\lcp.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\magic.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\md5.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\pap.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\ppp.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\ppp_oe.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\randm.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\vj.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\slipif.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\system\OS\sys_arch.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\BSP\STM32746G-Discovery\stm32746g_discovery.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\BSP\STM32746G-Discovery\stm32746g_discovery_lcd.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\BSP\STM32746G-Discovery\stm32746g_discovery_ts.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\StartupFiles\startup_stm32f746xx.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_adc.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_adc_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_can.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_cec.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_cortex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_cryp.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_cryp_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dac.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dac_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dcmi.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dcmi_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma2d.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_eth.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_flash.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_flash_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_gpio.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_hash.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_hash_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_hcd.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_i2c.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_i2c_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_i2s.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_irda.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_iwdg.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_lptim.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_ltdc.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_nand.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_nor.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pcd.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pcd_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pwr.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pwr_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_qspi.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rcc.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rcc_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rng.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rtc.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rtc_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_sai.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_sai_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_sd.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_sdram.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_smartcard.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_smartcard_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_spdifrx.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_spi.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_sram.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_tim.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_tim_ex.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_uart.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_usart.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_wwdg.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_fmc.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_sdmmc.c" />
+    <ClCompile Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_usb.c" />
+    <ClCompile Include="ethernetif.cpp" />
+    <ClCompile Include="server.cpp" />
+    <ClCompile Include="system_stm32f7xx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\include\croutine.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\include\deprecated_definitions.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\include\event_groups.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\include\FreeRTOS.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\include\list.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\include\mpu_wrappers.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\include\portable.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\include\projdefs.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\include\queue.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\include\semphr.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\include\StackMacros.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\include\task.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\include\timers.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\ipv4\lwip\autoip.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\ipv4\lwip\icmp.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\ipv4\lwip\igmp.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\ipv4\lwip\inet.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\ipv4\lwip\inet_chksum.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\ipv4\lwip\ip.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\ipv4\lwip\ip_addr.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\ipv4\lwip\ip_frag.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\api.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\api_msg.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\arch.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\debug.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\def.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\dhcp.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\dns.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\err.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\init.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\lwip_timers.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\mem.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\memp.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\memp_std.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\netbuf.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\netdb.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\netif.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\netifapi.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\opt.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\pbuf.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\raw.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\sio.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\snmp.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\snmp_asn1.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\snmp_msg.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\snmp_structs.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\sockets.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\stats.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\sys.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\tcp.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\tcpip.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\tcp_impl.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\lwip\udp.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\netif\etharp.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\netif\ppp_oe.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\netif\slipif.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\include\posix\sys\socket.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\auth.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\chap.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\chpms.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\fsm.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\ipcp.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\lcp.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\magic.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\md5.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\pap.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\ppp.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\pppdebug.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\ppp_impl.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\randm.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\LwIP\src\netif\ppp\vj.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\BSP\STM32746G-Discovery\stm32746g_discovery.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\BSP\STM32746G-Discovery\stm32746g_discovery_lcd.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\BSP\STM32746G-Discovery\stm32746g_discovery_ts.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Device\ST\STM32F7xx\Include\stm32f7xx.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Device\ST\STM32F7xx\Include\system_stm32f7xx.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\arm_common_tables.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\arm_const_structs.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\arm_math.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\cmsis_armcc.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\cmsis_armcc_V6.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\cmsis_gcc.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\core_cm0.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\core_cm0plus.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\core_cm3.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\core_cm4.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\core_cm7.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\core_cmFunc.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\core_cmInstr.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\core_cmSimd.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\core_sc000.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\Include\core_sc300.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\CMSIS_HAL\RTOS\Template\cmsis_os.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_adc.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_adc_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_can.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cec.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cortex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_crc.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_crc_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cryp.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cryp_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dac.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dac_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dcmi.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dcmi_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_def.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dma.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dma2d.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dma_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_eth.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_flash.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_flash_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_gpio.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_gpio_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_hash.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_hash_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_hcd.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_i2c.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_i2c_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_i2s.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_irda.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_irda_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_iwdg.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_lptim.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_ltdc.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_nand.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_nor.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_pcd.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_pcd_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_pwr.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_pwr_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_qspi.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rcc.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rcc_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rng.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rtc.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rtc_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_sai.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_sai_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_sd.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_sdram.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_smartcard.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_smartcard_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_spdifrx.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_spi.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_sram.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_tim.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_tim_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_uart.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_uart_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_usart.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_usart_ex.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_wwdg.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_fmc.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_sdmmc.h" />
+    <ClInclude Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F7xxxx\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_usb.h" />
+    <ClInclude Include="ethernetif.h" />
+    <ClInclude Include="FreeRTOSConfig.h" />
+    <ClInclude Include="lwipopts.h" />
+    <ClInclude Include="stm32f7xx_hal_conf.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="debug.mak" />
+    <None Include="Makefile" />
+    <None Include="release.mak" />
+    <None Include="server-Debug.vgdbsettings" />
+    <None Include="server-Release.vgdbsettings" />
+    <None Include="stm32.mak" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="stm32.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\License\license.txt" />
+    <Text Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\readme.txt" />
+    <Text Include="..\..\Users\Kenny\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\FreeRTOS\Source\st_readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

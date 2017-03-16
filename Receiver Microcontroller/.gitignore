@@ -1,0 +1,8 @@
+VisualGDBCache
+Debug
+.vs
+CodeDB
+debug.mak
+*.sdf
+*.user
+server-Debug.vgdbsettings

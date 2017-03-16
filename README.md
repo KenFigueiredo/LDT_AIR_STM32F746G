@@ -1,6 +1,6 @@
-#STM3246NG-DISCO Ethernet / LDT 
+# STM3246NG-DISCO Ethernet / LDT 
 
-*NOTE* This is a experimental PoC and not currently being developed. 
+**NOTE** This is a experimental PoC and not currently being developed. 
 
 ---
 
